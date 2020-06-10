@@ -10,6 +10,13 @@ $(document).ready(function () {
 	$(".card").draggable({revert: "invalid"});
 
 	for (let i = 0; i < 10; i++){
-		$(`#slot_${i+1}`).droppable({accept: `#card_${i+1}`});
+		$(`#slot_${i+1}`).droppable({accept: `#card_${i+1}`, drop: function(event, ui){
+				ui.draggable.remove();
+				($(this).addClass('green'));
+			}
+
+		});
 	};
 });
+
+
