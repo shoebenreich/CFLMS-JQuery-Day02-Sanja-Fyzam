@@ -11,7 +11,7 @@
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 0 0 2rem 0;
+  margin: 1rem;
 }
 
 .slot {
@@ -22,7 +22,7 @@
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 0 0 2rem 0;
+  margin: 1rem;
 }
 
 #wrapper {
@@ -38,5 +38,27 @@
 
 .green {
   background-color: green;
+}
+
+#card_wrapper {
+  width: 50%;
+  height: auto;
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#slot_wrapper {
+  width: 50%;
+  height: auto;
+  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=card_game.css.map */
