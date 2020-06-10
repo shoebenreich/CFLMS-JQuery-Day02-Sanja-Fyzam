@@ -16,8 +16,8 @@
 
 .slot {
   font-size: 4rem;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: grey;
   text-align: center;
   -ms-flex-line-pack: center;
@@ -31,9 +31,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .green {
@@ -47,6 +46,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -54,6 +56,9 @@
 #slot_wrapper {
   width: 50%;
   height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
