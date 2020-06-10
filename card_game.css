@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  font-size: 4rem;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 0 2rem 0;
+}
+
+.slot {
+  font-size: 4rem;
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 0 2rem 0;
+}
+
+#wrapper {
+  margin: 2rem auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=card_game.css.map */
