@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+        .wrap {
+            display: flex;
+			justify-content: space-evenly;
+			width: 90%;
+			margin: 2rem auto;
+        }
+		.box {
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 15rem;
+			height: 15rem;
+		}
+		#present {
+			background-image: url("./present.png");
+		}
+		.santa {
+			background-image: url("./santa.png");
+		}
+		#bells {
+			background-image: url("./bells.png");
+		}
+	</style>
+	<title>Basic JQuery Day 02</title>
+</head>
+<body>
+    <div id="wrapper1" class="wrap"></div>
+    <div id="wrapper2" class="wrap"></div>
+	<div id="wrapper3" class="wrap"></div>
+
+
+	<script>
+		$(document).ready(function(){
+			$("#wrapper1").prepend('<div id="present" class="box"></div><div class="box santa"></div><div id="present" class="box">');
+            $("#wrapper2").prepend('<div id="present" class="box"></div><div class="box santa "></div><div id="present" class="box">');
+            $("#wrapper3").prepend('<div class="box santa"></div><div id="present" class="box"></div><div class="box santa"></div>');
+            $(".santa").on("click", function(){
+            $(this).css("visibility", "hidden");
+            // $(this).hide();
+            })
+		})
+	</script>
+</body>
+</html>
