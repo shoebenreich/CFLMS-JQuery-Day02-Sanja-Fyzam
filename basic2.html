@@ -23,13 +23,13 @@
 			width: 15rem;
 			height: 15rem;
 		}
-		#present {
+		.present {
 			background-image: url("./present.png");
 		}
 		.santa {
 			background-image: url("./santa.png");
 		}
-		#bells {
+		.bells {
 			background-image: url("./bells.png");
 		}
 	</style>
@@ -39,13 +39,11 @@
     <div id="wrapper1" class="wrap"></div>
     <div id="wrapper2" class="wrap"></div>
 	<div id="wrapper3" class="wrap"></div>
-
-
 	<script>
 		$(document).ready(function(){
-			$("#wrapper1").prepend('<div id="present" class="box"></div><div class="box santa"></div><div id="present" class="box">');
-            $("#wrapper2").prepend('<div id="present" class="box"></div><div class="box santa "></div><div id="present" class="box">');
-            $("#wrapper3").prepend('<div class="box santa"></div><div id="present" class="box"></div><div class="box santa"></div>');
+			$("#wrapper1").prepend('<div class="box present"></div><div class="box santa"></div><div class="box present">');
+            $("#wrapper2").prepend('<div class="box present"></div><div class="box santa "></div><div class="box present">');
+            $("#wrapper3").prepend('<div class="box santa"></div><divclass="box present"></div><div class="box santa"></div>');
             $(".santa").on("click", function(){
             $(this).css("visibility", "hidden");
             // $(this).hide();
